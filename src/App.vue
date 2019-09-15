@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-navigation-drawer app clipped expand-on-hover permanent>
-     <template v-slot:prepend>
+      <template v-slot:prepend>
         <v-list>
           <v-list-item>
             <v-list-item-avatar>
@@ -9,10 +9,7 @@
             </v-list-item-avatar>
           </v-list-item>
 
-          <v-list-item
-            link
-            two-line
-          >
+          <v-list-item link two-line>
             <v-list-item-content>
               <v-list-item-title class="title">Sandra Adams</v-list-item-title>
               <v-list-item-subtitle>sandra_a88@gmail.com</v-list-item-subtitle>
@@ -26,10 +23,7 @@
 
       <v-divider></v-divider>
 
-      <v-list
-        nav
-        dense
-      >
+      <v-list nav dense>
         <v-list-item link>
           <v-list-item-icon>
             <v-icon>mdi-folder</v-icon>
@@ -67,22 +61,19 @@
     </v-app-bar>
 
     <v-content>
-      <Table/>
+      <router-view></router-view>
     </v-content>
   </v-app>
 </template>
 
 <script>
-import Table from './components/Table';
-
 export default {
   name: 'App',
   components: {
-    Table,
+    //
   },
   data: () => ({
-    drawer: false,
-    mini: false
+    //
   }),
 };
 </script>
