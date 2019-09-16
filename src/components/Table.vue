@@ -1,12 +1,11 @@
 <template>
   <v-container>
     <v-layout text-center wrap>
-      <v-flex xs12 >
+      <v-flex>
         <v-data-table
           :headers='headers'
           :items='wires'
           :items-per-page='5'
-          :elevation='10'
           @click:row='showAlert'
           class='elevation-5'
         >
