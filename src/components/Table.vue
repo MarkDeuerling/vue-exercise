@@ -6,7 +6,7 @@
           :headers='headers'
           :items='wires'
           :items-per-page='5'
-          @click:row='showAlert'
+          @click:row='showDetails'
           class='elevation-5'
         >
         </v-data-table>
@@ -24,12 +24,14 @@ export default {
       {text: 'Art', align: 'left', sortable: true, value: 'type'},
       {text: 'Länge', align: 'left', sortable: true, value: 'length'},
       {text: 'Geändert am', align: 'left', sortable: true, value: 'changed'},
+      {text: 'Status', align: 'left', sortable: true, value: 'state'},
     ],
     wires
   }),
   methods: {
-    showAlert() {
-      alert('Will direct to wire view')
+    showDetails(e) {
+      console.log(e)
+      this.$router.push({name: 'wireDetail'})
     }
   }
 }

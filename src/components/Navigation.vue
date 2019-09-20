@@ -34,7 +34,7 @@ export default {
       },
       {
         link: '',
-        title: 'Favorieten',
+        title: 'Favoriten',
         icon: 'mdi-star'
       },
     ]

@@ -1,7 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Wire from '@/views/Wire'
+
 import Dashboard from '@/views/Dashboard'
+import Wire from '@/views/Wire'
+import WireDetail from '@/views/WireDetail'
 
 Vue.use(Router)
 
@@ -18,6 +20,11 @@ export default new Router({
       path: '/wire',
       name: 'wire',
       component: Wire
+    },
+    {
+      path: '/wire-detail',
+      name: 'wireDetail',
+      component: WireDetail
     },
   ]
 })
