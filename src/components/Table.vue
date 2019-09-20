@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-layout text-center wrap>
+    <v-layout>
       <v-flex>
         <v-data-table
           :headers='headers'
@@ -29,7 +29,7 @@ export default {
   }),
   methods: {
     showAlert() {
-      alert('afdfasdfsadfs')
+      alert('Will direct to wire view')
     }
   }
 }
