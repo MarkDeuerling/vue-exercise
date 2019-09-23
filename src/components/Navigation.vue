@@ -24,7 +24,7 @@
     :expand-on-hover="$vuetify.breakpoint.mdAndUp"
     v-model="drawer"
   >
-    <Avatar :imageSrc="avatar.imageSrc" :name="avatar.name" :email="avatar.email" />
+    <Avatar :initials="avatar.initials" :name="avatar.name" :email="avatar.email" />
     <v-divider></v-divider>
     <NavigationItem :routes="routes"/>
   </v-navigation-drawer>
@@ -49,9 +49,10 @@ export default {
   data: () => ({
     drawer: null,
     avatar: {
-      imageSrc: 'https://randomuser.me/api/portraits/women/85.jpg',
-      name: 'Sandra Adams',
-      email: 'sandra_a88@gmail.com'
+      // image: 'https://randomuser.me/api/portraits/women/85.jpg',
+      initials: 'MD',
+      name: 'Mark Deuerling',
+      email: 'mark.deuerling@ard-poc.de'
     },
     routes: [
       {
@@ -65,9 +66,9 @@ export default {
         icon: 'mdi-ethernet-cable'
       },
       {
-        link: '',
-        title: 'Favoriten',
-        icon: 'mdi-star'
+        link: 'upload',
+        title: 'Kabelliste hochladen',
+        icon: 'mdi-upload'
       },
     ]
   })
