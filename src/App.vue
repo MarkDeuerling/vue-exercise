@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <Bar/>
+    <!-- <Bar/> -->
     <Navigation/>
     <v-content>
       <router-view/>
@@ -10,12 +10,12 @@
 
 <script>
 import Navigation from '@/components/Navigation'
-import Bar from '@/components/Bar'
+// import Bar from '@/components/Bar'
 
 export default {
   components: {
     Navigation,
-    Bar
+    // Bar
   },
 };
 </script>

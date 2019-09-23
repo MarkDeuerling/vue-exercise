@@ -1,17 +1,17 @@
 <template>
   <v-container>
     <Search/>
-    <Table/>
+    <WireTable/>
   </v-container>
 </template>
 
 <script>
-import Table from '@/components/Table'
+import WireTable from '@/components/WireTable'
 import Search from '@/components/Search'
 
 export default {
   components: {
-    Table,
+    WireTable,
     Search,
   },
 }

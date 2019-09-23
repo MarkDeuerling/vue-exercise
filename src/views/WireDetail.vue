@@ -9,6 +9,14 @@
 
 <script>
 export default {
-
+  props: ['id'],
+  mounted() {
+    console.log("mouted")
+    console.log(this.id)
+  },
+  created() {
+    console.log("created")
+    console.log(this.id)
+  }
 }
 </script>

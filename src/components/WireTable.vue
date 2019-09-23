@@ -31,12 +31,8 @@ export default {
   methods: {
     showDetails(e) {
       console.log(e)
-      this.$router.push({name: 'wireDetail'})
+      this.$router.push({name: 'wireDetail', params: {id: e.id}})
     }
   }
 }
 </script>
-
-<style>
-
-</style>

@@ -24,6 +24,7 @@ export default new Router({
     {
       path: '/wire-detail',
       name: 'wireDetail',
+      props: true,
       component: WireDetail
     },
   ]

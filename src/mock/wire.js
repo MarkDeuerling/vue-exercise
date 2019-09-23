@@ -1,5 +1,6 @@
 let data = [
   {
+    id: '0',
     nr: 'zz 1',
     length: '5,0',
     type: '0.6 / 2.8',
@@ -24,6 +25,7 @@ let data = [
     },
   },  
   {
+    id: '1',
     nr: 'zz 2',
     length: '5,0',
     type: '0.6 / 2.8',
@@ -48,6 +50,7 @@ let data = [
     },
   },
   {
+    id: '2',
     nr: 'zz 3',
     length: '5,0',
     type: '0.6 / 2.8',
@@ -72,6 +75,7 @@ let data = [
     },
   },
   {
+    id: '3',
     nr: 'zz 4',
     length: '5,0',
     type: '0.6 / 2.8',
